@@ -85,7 +85,7 @@ async function renderStrip(strip, photos) {
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(([entry]) => {
       strip.classList.toggle("paused", !entry.isIntersecting);
-    }, { threshold: 0.1 });
+    }, { threshold: 0 });
     observer.observe(strip);
   }
 

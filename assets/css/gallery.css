@@ -170,14 +170,21 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .photo-strip {
-    width: auto;
+  .photo-strip-viewport {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: none;
+    mask-image: none;
     scroll-snap-type: x mandatory;
+  }
+
+  .photo-strip {
+    width: max-content;
+    overflow-x: visible;
     animation: none;
   }
 
   .photo-thumb {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
   }
 }
