@@ -71,7 +71,12 @@
 }
 
 @media (min-width: 1024px) {
+  .lookbook-scroll {
+    justify-content: center;
+    overflow-x: visible;
+    padding: 0 var(--space-8) var(--space-4);
+  }
   .lookbook-card {
-    flex-basis: 340px;
+    flex: 0 0 min(280px, calc(25vw - var(--space-4)));
   }
 }
