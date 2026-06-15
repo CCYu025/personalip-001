@@ -1,0 +1,39 @@
+.brand-story {
+  background: var(--color-bg);
+}
+
+.story-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 360px);
+  gap: clamp(2rem, 8vw, 6rem);
+  align-items: center;
+}
+
+.story-copy {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.story-copy p:not(.section-kicker) {
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+}
+
+.story-illustration {
+  width: min(100%, 340px);
+  justify-self: center;
+  border-radius: var(--radius-md);
+  opacity: 0.78;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 767px) {
+  .story-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .story-illustration {
+    width: min(78vw, 280px);
+    order: -1;
+  }
+}
