@@ -1,13 +1,14 @@
 :root {
   --color-bg: #FAFAF8;
   --color-surface: #FFFFFF;
-  --color-border: #EDE8E3;
-  --color-accent: #C09070;
-  --color-accent-deep: #2D1F14;
-  --color-accent-soft: #F2D9C8;
-  --color-text: #2D1F14;
-  --color-text-muted: #7A6A5A;
+  --color-border: #ECE7E8;
+  --color-accent: #A8385A;
+  --color-accent-deep: #7A2240;
+  --color-accent-soft: #F7E3E8;
+  --color-text: #1C1A1B;
+  --color-text-muted: #6E6166;
   --color-white: #FFFFFF;
+  --color-gold: #C9A86A;
   --font-display: "Playfair Display", "Noto Serif TC", serif;
   --font-body: "Noto Sans TC", "PingFang TC", sans-serif;
   --text-xs: 0.75rem;
@@ -32,8 +33,8 @@
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-full: 9999px;
-  --shadow-card: 0 2px 12px rgba(45,31,20,0.08);
-  --shadow-hover: 0 8px 24px rgba(45,31,20,0.14);
+  --shadow-card: 0 2px 12px rgba(28,26,27,0.08);
+  --shadow-hover: 0 8px 24px rgba(28,26,27,0.14);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
   --duration-fast: 180ms;
@@ -82,7 +83,7 @@ button {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(192,144,112,0.45);
+  outline: 3px solid rgba(168,56,90,0.45);
   outline-offset: 3px;
 }
 
@@ -104,7 +105,7 @@ button {
 
 .site-header.is-scrolled {
   background: rgba(250,250,248,0.88);
-  box-shadow: 0 1px 0 rgba(45,31,20,0.08);
+  box-shadow: 0 1px 0 rgba(28,26,27,0.08);
   backdrop-filter: blur(18px);
 }
 
@@ -140,7 +141,7 @@ button {
   justify-content: center;
   min-height: 38px;
   padding: 0 var(--space-4);
-  border: 1px solid rgba(45,31,20,0.16);
+  border: 1px solid rgba(28,26,27,0.16);
   border-radius: var(--radius-full);
   text-decoration: none;
   font-size: var(--text-sm);
@@ -213,7 +214,7 @@ h2 {
 }
 
 .btn-secondary {
-  border: 1.5px solid rgba(45,31,20,0.14);
+  border: 1.5px solid rgba(28,26,27,0.14);
   background: rgba(255,255,255,0.62);
   color: var(--color-text);
 }
@@ -227,11 +228,12 @@ h2 {
 .btn-line {
   border: 0;
   background: #06C755;
-  color: white;
+  color: var(--color-text);
 }
 
 .btn-line:hover {
   background: #04a847;
+  color: var(--color-text);
   transform: translateY(-1px);
 }
 
