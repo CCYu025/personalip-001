@@ -92,6 +92,21 @@ async function renderStrip(strip, photos) {
   document.addEventListener("visibilitychange", () => {
     strip.classList.toggle("paused", document.hidden);
   });
+
+  // Pause only on keyboard navigation (Tab), not after mouse-click lightbox close
+  let usingKeyboard = false;
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Tab") usingKeyboard = true;
+  }, { passive: true });
+  document.addEventListener("mousedown", () => {
+    usingKeyboard = false;
+  }, { passive: true });
+  strip.addEventListener("focusin", () => {
+    if (usingKeyboard) strip.classList.add("paused");
+  });
+  strip.addEventListener("focusout", (e) => {
+    if (!strip.contains(e.relatedTarget)) strip.classList.remove("paused");
+  });
 }
 
 function makeThumb(photo, index) {

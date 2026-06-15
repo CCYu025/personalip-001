@@ -19,8 +19,7 @@
 }
 
 .photo-strip.paused,
-.photo-strip:hover,
-.photo-strip:focus-within {
+.photo-strip:hover {
   animation-play-state: paused;
 }
 
