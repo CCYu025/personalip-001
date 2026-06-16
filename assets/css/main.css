@@ -1,7 +1,7 @@
 :root {
-  --color-bg: #FAFAF8;
+  --color-bg: #FDEFF2;
   --color-surface: #FFFFFF;
-  --color-border: #ECE7E8;
+  --color-border: #F0DCE1;
   --color-accent: #A8385A;
   --color-accent-deep: #7A2240;
   --color-accent-soft: #F7E3E8;
@@ -104,7 +104,7 @@ button {
 }
 
 .site-header.is-scrolled {
-  background: rgba(250,250,248,0.88);
+  background: rgba(253,239,242,0.88);
   box-shadow: 0 1px 0 rgba(28,26,27,0.08);
   backdrop-filter: blur(18px);
 }

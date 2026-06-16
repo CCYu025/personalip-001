@@ -54,7 +54,7 @@
 }
 
 .skeleton {
-  background: linear-gradient(100deg, #f1ece7, #fff, #f1ece7);
+  background: linear-gradient(100deg, #F3E1E6, #FBE9ED, #F3E1E6);
   background-size: 200% 100%;
   animation: skeleton 1.2s var(--ease-in-out) infinite;
 }
